@@ -1,0 +1,17 @@
+.start {
+    transition-duration: 1000ms;
+    transform: scale(0.8);
+    display: none;
+    gap: 25px;
+    align-items: start;
+    background-image: url(../images/bg-triangle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 700px;
+
+    .lastGridItem {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+}
+

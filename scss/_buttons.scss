@@ -1,0 +1,70 @@
+.actionBtn {
+    @include actionBtn;
+}
+
+.actionBtn:hover {
+    cursor: pointer;
+}
+
+.paperBtn {
+    @include buttonBorder(rgba(72,101,244,0.6));
+}
+
+.paperBtn:active {
+    border-color: hsl(230, 89%, 65%);
+    bottom:-5px;
+}
+
+.paperBtn:before {
+    @include actionBtnBefore;
+    @include buttonBorder(hsl(230, 89%, 65%));
+}
+
+.scissorsBtn {
+    @include buttonBorder(rgba(236, 158, 14,0.6));
+}
+
+.scissorsBtn:active {
+    border-color: hsl(40, 84%, 53%);
+    bottom:-5px;
+}
+
+.scissorsBtn:before {
+    @include actionBtnBefore;
+    @include buttonBorder(hsl(40, 84%, 53%));
+}
+
+.rockBtn {
+    @include buttonBorder(rgba(220, 46, 78, 0.6));
+}
+
+.rockBtn:active {
+    border-color: rgba(221, 64, 93, 1);
+    bottom:-5px;
+}
+
+.rockBtn:before {
+    @include actionBtnBefore;
+    @include buttonBorder(rgba(221, 64, 93, 1));
+}
+
+.winnerBtn {
+    height: 200px;
+    width: 200px;
+    outline: 50px solid rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    position:relative;/* pick as reference for pseudo absolute */
+    -moz-box-sizing:border-box; /* keep box within size given */
+    box-sizing:border-box;
+}
+
+.winnerBtn:after {
+    content:"";
+    width:300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 50px solid rgba(0, 0, 0, 0.2);
+    outline: 50px solid rgba(0, 0, 0, 0.1);
+    z-index: -1;
+    position: absolute;
+}

@@ -1,0 +1,64 @@
+.results {
+    display: none;
+    width: 700px;
+    transition-duration: 1000ms;
+
+    h2 {
+        color: white;
+        margin: 50px 0px;
+    }
+
+    .leftSide {
+        width:50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        transition-duration: 1000ms;
+    }
+
+    .rightSide {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition-duration: 1000ms;
+    }
+
+    .middleSide {
+        width: 33%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 150px;
+        transition-duration: 1000ms;
+
+        .communicat {
+            color: white;
+            font-weight: 700;
+            font-size: 50px;
+            text-transform: uppercase;
+        }
+
+        .playAgainBtn {
+            width: 175px;
+            height: 40px;
+            font-weight: 700;
+            border: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+    }
+
+    .emptyCircle {
+        width: 150px;
+        height: 150px;
+        margin-top: 25px;
+        border: none;
+        border-radius: 50%;
+        background-color: hsl(237, 49%, 15%);
+        opacity: 0.5;
+    }
+}

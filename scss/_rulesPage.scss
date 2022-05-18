@@ -1,0 +1,43 @@
+.rulesPage {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .rulesCard {
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        width: 400px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+
+
+        .rulesCardTitle {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: $dark-text;
+
+            img {
+                cursor: pointer;
+            }
+        }
+
+        .rulesImage {
+            margin-top: 20px;
+            width: 300px;
+            height: auto;
+            align-self: center;
+        }
+
+    }
+}

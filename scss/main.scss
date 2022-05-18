@@ -1,0 +1,19 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+@import "_resets.scss";
+@import "_scoreboard.scss";
+@import "_start.scss";
+@import "_rulesBtn.scss";
+@import "_results.scss";
+@import "_buttons.scss";
+@import "_rulesPage.scss";
+@import "_gameWrapper.scss";
+
+.hidden {
+    display: none;
+}
+  
+.visuallyhidden {
+opacity: 0;
+}

@@ -1,0 +1,18 @@
+.rulesBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: none;
+    color: white;
+    border: 2px solid $header-outline;
+    border-radius: 10px;
+    font-weight: 600;
+    width: 100px;
+    height: 40px;
+    
+}
+
+.rulesBtn:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+}

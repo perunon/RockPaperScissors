@@ -1,0 +1,30 @@
+@mixin actionBtn () {
+    justify-self: center;
+    background-color: white;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 75px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+}
+
+@mixin actionBtnBefore {
+    content: " ";
+    position: absolute;
+    top: -26px;
+    z-index: 1;
+    width: 160px;
+    height: 160px;
+}
+
+@mixin buttonBorder ($color) {
+    border: 20px solid $color;
+    border-radius: 50%;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./scss/main.css">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+</head>
+<body>
+
+  <header class="scoreboard">
+    <img src="./images/logo.svg" alt="">
+    <div class="scoreDiv">
+      <p>SCORE</p>
+      <p id="score">0</p>
+    </div>
+  </header>
+
+  <main class="gameWrapper" id="gameWrapper">
+
+    <div class="start" id="start">
+      <div class="actionBtn paperBtn" onclick='play("paper")' id="paper">
+        <img src="./images/icon-paper.svg" alt="">
+      </div>
+      <div class="actionBtn scissorsBtn" onclick='play("scissors")' id="scissors">
+        <img src="./images/icon-scissors.svg" alt="">
+      </div>
+      <div class="actionBtn lastGridItem rockBtn" onclick='play("rock")' id="rock">
+        <img src="./images/icon-rock.svg" alt="">
+      </div>
+    </div>
+
+    <div class="results" id="results">
+      <div class="leftSide" id="leftSide">
+        <h2>YOU PICKED</h2>
+        <div class="actionBtn" id="chosenBtn">
+            <img src="" alt="" id="chosenBtnImage">
+        </div>
+      </div>
+      <div class="middleSide" id="middleSide">
+        <h1 class="communicat" id="communicat"></h1>
+        <button class="playAgainBtn" id="playAgainBtn" onclick="playAgain()">PLAY AGAIN</button>
+      </div>
+      <div class="rightSide" id="rightSide">
+        <h2>THE HOUSE PICKED</h2>
+        <div class="emptyCircle" id="houseBtn">
+          <img src="" alt="" id="houseBtnImage">  
+        </div>
+      </diV>
+    </div>  
+
+    <div class="rulesPage" id="rulesPage">
+      <div class="rulesCard">
+          <div class="rulesCardTitle">
+            <h1>RULES</h1>
+            <img src="./images/icon-close.svg" alt="" onclick="hideRules()">
+          </div>
+          <img src="./images/image-rules.svg" class="rulesImage" alt="">
+      </div>
+      
+    </div>
+
+  </main>
+
+  <button class="rulesBtn" onclick="showRules()">
+    RULES
+  </button>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
