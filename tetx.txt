@@ -1,10 +1,2 @@
-  Score
-  Rules
-
-  You Picked
-  The House Picked
-
-  You Win
-  You Lose
-
-  Play Again
+ https://perunon.github.io/RockPaperScissors/
+  
