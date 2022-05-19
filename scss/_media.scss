@@ -1,0 +1,21 @@
+@media screen and (max-width: 768px) {
+
+    .scoreboard {
+        width: 93%;
+    }
+
+    .gameWrapper {
+        width: 93%;
+
+        .start {
+            width: 700px;
+        }
+    }
+
+    .rulesBtn {
+        position: relative;
+        bottom: 0;
+        right: 0;
+    }
+    
+}
