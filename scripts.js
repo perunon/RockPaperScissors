@@ -30,8 +30,6 @@ const play = (figure) => {
 
     let houseChoice = chooseRandomItem(figures);
 
-    console.log(houseChoice);
-
     houseBtn.className = `actionBtn ${houseChoice}Btn`;
     houseBtnImage.src = `./images/icon-${houseChoice}.svg`;
 
@@ -94,13 +92,13 @@ const checkResults = (figure, houseChoice) => {
     }
 }
 
-const show = (element, displayType) => {
+const show = (element, displayType, animationDuration = 50) => {
 
     element.style.display = displayType;
 
         setTimeout(function () {
             element.classList.remove('visuallyhidden');
-            }, 20);  
+            }, animationDuration);  
         element.addEventListener('transitionend', function(e) {
             element.classList.remove('hidden');
         }, {
@@ -110,13 +108,13 @@ const show = (element, displayType) => {
         });    
 }
 
-const hide = (element) => { 
+const hide = (element, animationDuration=50) => { 
 
     if (element.classList.contains('hidden')) {
         element.classList.remove('hidden');
         setTimeout(function () {
         element.classList.remove('visuallyhidden');
-        }, 20);
+        }, animationDuration);
     } else {
         element.classList.add('visuallyhidden');    
         element.addEventListener('transitionend', function(e) {

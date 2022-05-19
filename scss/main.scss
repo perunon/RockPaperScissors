@@ -9,11 +9,5 @@
 @import "_buttons.scss";
 @import "_rulesPage.scss";
 @import "_gameWrapper.scss";
+@import "_hiding.scss";
 
-.hidden {
-    display: none;
-}
-  
-.visuallyhidden {
-opacity: 0;
-}

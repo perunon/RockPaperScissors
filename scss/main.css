@@ -320,6 +320,10 @@ body {
   position: absolute;
 }
 
+.houseBtnImage {
+  display: none;
+}
+
 .rulesPage {
   display: none;
   -webkit-box-pack: center;
