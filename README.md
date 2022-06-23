@@ -1,5 +1,7 @@
 # Frontend Mentor - Rock, Paper, Scissors
 
+### ✨ [Demo](https://perunon.github.io/RockPaperScissors)
+
 ![Design preview for the Rock, Paper, Scissors coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
